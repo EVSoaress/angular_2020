@@ -1,0 +1,23 @@
+<div class="p-grid">
+
+    <div class="ui-grid-col-4">
+        <button><a class="nav-link" routerLinkActive="rota-ativa" id="ab"
+        [routerLink]="[{outlets: {'cadastro': ['cliente']}}]" routerLinkActive="router-link-active" role="tab"
+        data-toggle="tab">Cliente</a></button>
+    </div>
+
+    <div class="ui-grid-col-4">
+        <button><a class="nav-link" routerLinkActive="rota-ativa" id="ab"
+        [routerLink]="[{outlets: {'cadastro': ['endereco']}}]" routerLinkActive="router-link-active" role="tab"
+        data-toggle="tab">endereco</a></button>
+    </div>
+
+    <div class="ui-grid-col-4">
+        <button><a class="nav-link" routerLinkActive="rota-ativa" id="ab"
+        [routerLink]="[{outlets: {'cadastro': ['financeiro']}}]" routerLinkActive="router-link-active" role="tab"
+        data-toggle="tab">financeiro</a></button>
+    </div>
+
+</div>
+
+<router-outlet name="cadastro"></router-outlet>

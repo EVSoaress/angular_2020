@@ -1,0 +1,19 @@
+<div class="p-col-align-center ui-fluid" style="position: relative; top: 85px; left: 580px;">
+    <div [formGroup]="validlogin">
+        <p-card class="ui-card" header="Login" [style]="{width: '360px', height: '210px'}">
+
+            <span class="ui-float-label" style="position: relative; top: 10px; height: 30px ">
+    <input id="float-input" formControlName="usuario" type="text" size="30" id="usuario" pInputText>
+    <label for="float-input">Usuário</label>
+</span>
+
+            <span class="ui-float-label" style="position: relative; top: 37px;">
+  <input id="float-input" formControlName="senha" type="password" size="30" id="senha" pInputText>
+  <label for="float-input">Senha</label>
+</span>
+
+            <button pButton type="button" (click)="validar()" style="position: relative; top: 50px;" label="Acessar" class="ui-button-raised ui-button-secondary"></button>
+
+        </p-card>
+    </div>
+</div>
